@@ -19,7 +19,7 @@ public class ClientController {
      */
     public boolean connectToServer(String name) {
         this.name = name;
-        if (server.connectUser(this)){
+        if (server.connectUser(clientView)){
             showOnWindow("Вы успешно подключились!\n");
             connected = true;
             String log = server.getHistory();
@@ -48,7 +48,7 @@ public class ClientController {
      * Метод отключения от сервера инициализированное клиентом (например закрыто GUI)
      */
     public void disconnectFromServer() {
-        server.disconnectUser(this);
+        server.disconnectUser(clientView);
     }
 
     /**

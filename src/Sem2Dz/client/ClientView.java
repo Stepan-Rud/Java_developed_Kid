@@ -13,4 +13,5 @@ public interface ClientView {
     void disconnectedFromServer();
 
 
+    void answer(String text);
 }

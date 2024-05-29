@@ -7,7 +7,11 @@ import javax.swing.*;
 
 public interface ServerView {
     JTextArea getLog(String text);
-    public void disconnectUser(ClientView clientView);
-    public void connectUser(ClientView clientView);
-    public void message(String text);
+    void disconnectUser(ClientView clientView);
+    void connectUser(ClientView clientView);
+    void message(String text);
+    void saveLog(String text);
+    void readLog();
+    String historyLog();
+
 }
