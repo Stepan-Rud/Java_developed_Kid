@@ -1,6 +1,6 @@
 package dz_sem3;
 
-public class Calculator {
+public class Calculatorr {
     public static <T extends Number, V extends Number> Number sum(T a, V b) {
         return new Number(){
 
