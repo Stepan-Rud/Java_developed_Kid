@@ -1,6 +1,8 @@
 package dz_sem3;
 
-public class CompareArrays {
+import java.lang.reflect.Type;
+
+public class CompareArrays <T, V>{
     public static <T> boolean compareArrays(T[] a, T[] b) {
         if (a == null && b == null) {
             return true;
@@ -15,6 +17,9 @@ public class CompareArrays {
             if (!a[i].equals(b[i])) {
                 return false;
             }
+        }
+        if (a.getClass() != b.getClass()) {
+            return false;
         }
         return true;
     }

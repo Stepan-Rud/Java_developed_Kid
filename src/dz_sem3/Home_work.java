@@ -20,7 +20,14 @@ public static void main(String[] args) {
     System.out.println(a.doubleValue());
 
     Integer[] arr1 = {1, 2, 3, 4, 5};
-    Integer[] arr2 = {1, 2, 3, 4, 5};
+    Double[] arr2 = {1.2, 2.2, 3.1, 4.3, 5.2};
     System.out.println(CompareArrays.compareArrays(arr1, arr2));
+}
+public static void table(double number) {
+    for (int i = 1; i <= 10; i++) {
+         number = number - 0.0075;
+         number = Math.round(number * 10000) / 10000.0;
+        System.out.println(number);
+    }
 }
 }
